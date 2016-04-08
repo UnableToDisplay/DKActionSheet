@@ -1,0 +1,13 @@
+PODS:
+  - CTAssetsPickerController (2.9.5)
+  - MJExtension (3.0.10)
+
+DEPENDENCIES:
+  - CTAssetsPickerController (~> 2.9.0)
+  - MJExtension
+
+SPEC CHECKSUMS:
+  CTAssetsPickerController: b413fece2194ae3dbf22fbc544cf6f2a6d516a4d
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+
+COCOAPODS: 0.39.0

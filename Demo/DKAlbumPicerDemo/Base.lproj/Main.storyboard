@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCe-Tf-U6x">
+                                <rect key="frame" x="120" y="80" width="360" height="80"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.40784313729999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="aOC-2e-E5T"/>
+                                </constraints>
+                                <state key="normal" title="ActionSheet">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHl-3g-hF4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoR-8d-Frc">
+                                <rect key="frame" x="120" y="200" width="360" height="80"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.40784313729999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="sik-pB-v08"/>
+                                </constraints>
+                                <state key="normal" title="AlbumPicker">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickAlbumPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GAt-ug-Nce"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zvm-uG-Iiz">
+                                <rect key="frame" x="20" y="320" width="560" height="280"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zvm-uG-Iiz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kvu-Dr-cz7"/>
+                            <constraint firstItem="RCe-Tf-U6x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="PO3-0D-txc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eoR-8d-Frc" secondAttribute="trailing" constant="100" id="VvI-fY-TFb"/>
+                            <constraint firstItem="eoR-8d-Frc" firstAttribute="top" secondItem="RCe-Tf-U6x" secondAttribute="bottom" constant="40" id="WHO-3b-e3s"/>
+                            <constraint firstItem="RCe-Tf-U6x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="a74-Vh-jy9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zvm-uG-Iiz" secondAttribute="bottom" id="hRS-nD-arl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RCe-Tf-U6x" secondAttribute="trailing" constant="100" id="hln-8d-7gb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zvm-uG-Iiz" secondAttribute="trailing" id="m0A-kj-qeU"/>
+                            <constraint firstItem="eoR-8d-Frc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="t94-El-ZFX"/>
+                            <constraint firstItem="Zvm-uG-Iiz" firstAttribute="top" secondItem="eoR-8d-Frc" secondAttribute="bottom" constant="40" id="tU6-F4-aVg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showImageView" destination="Zvm-uG-Iiz" id="wMN-sU-sVA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
